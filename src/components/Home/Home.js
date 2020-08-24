@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import Product from '../Product/Product';
 
 function Home() {
   return (
@@ -10,7 +11,50 @@ function Home() {
         alt=""
       />
       
-      <h1>This is Home Page.</h1>
+      {/* Products id, title, price, rating, image */}
+      <div className="home__row">
+        <Product
+          _id={'1234'}
+          title={'AmazonBasics 8-Sheet Capacity, Cross-Cut Paper and Credit Card Shredder, 4.1 Gallon'}
+          image={'https://m.media-amazon.com/images/I/71K7Q4FpguL._AC_UL320_.jpg'}
+          price={42.41}
+          rating={5}
+        />
+        
+        <Product
+          _id={'1234'}
+          title={'AmazonBasics 8-Sheet Capacity, Cross-Cut Paper and Credit Card Shredder, 4.1 Gallon'}
+          image={'https://m.media-amazon.com/images/I/71K7Q4FpguL._AC_UL320_.jpg'}
+          price={42.41}
+          rating={5}
+        />
+      </div>
+
+      <div className="home__row">
+        <Product
+          _id={'1234'}
+          title={'AmazonBasics 8-Sheet Capacity, Cross-Cut Paper and Credit Card Shredder, 4.1 Gallon'}
+          image={'https://m.media-amazon.com/images/I/71K7Q4FpguL._AC_UL320_.jpg'}
+          price={42.41}
+          rating={5}
+        />
+        
+        <Product
+          _id={'1234'}
+          title={'AmazonBasics 8-Sheet Capacity, Cross-Cut Paper and Credit Card Shredder, 4.1 Gallon'}
+          image={'https://m.media-amazon.com/images/I/71K7Q4FpguL._AC_UL320_.jpg'}
+          price={42.41}
+          rating={5}
+        />
+        
+        <Product
+          _id={'1234'}
+          title={'AmazonBasics 8-Sheet Capacity, Cross-Cut Paper and Credit Card Shredder, 4.1 Gallon'}
+          image={'https://m.media-amazon.com/images/I/71K7Q4FpguL._AC_UL320_.jpg'}
+          price={42.41}
+          rating={5}
+        />
+      </div>
     </div>
   )
 }
