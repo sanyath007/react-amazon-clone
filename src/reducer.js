@@ -13,8 +13,13 @@ function reducer(state, action) {
 
       break;
     case 'REMOVE_FROM_BASKET':
+      let _basket = [...state.basket];
+      
       return {
-        ...state
+        ...state,
+        basket: _basket.filter(item => {
+          return item._id !== action.id
+        })
       };
 
       break;
