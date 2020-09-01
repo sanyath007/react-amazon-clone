@@ -16,8 +16,6 @@ function Product({_id, title, image, price, rating}) {
         rating
       }
     });
-
-    console.log(basket);
   };
 
   return (
