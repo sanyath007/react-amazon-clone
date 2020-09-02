@@ -15,12 +15,12 @@ function App() {
     const unsubscribe = auth.onAuthStateChanged(authUser => {
       if(authUser) {  
         dispatch({
-          tpye: 'SET_USER',
+          type: 'SET_USER',
           user: authUser
         })
       } else {
         dispatch({
-          tpye: 'SET_USER',
+          type: 'SET_USER',
           user: null
         })
       }
